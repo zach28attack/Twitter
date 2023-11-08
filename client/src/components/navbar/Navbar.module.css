@@ -1,0 +1,52 @@
+.container {
+  border: solid 1px #17191b;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container ul {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  height: 100%;
+  list-style: none;
+}
+.logo {
+  font-size: 1.4em;
+}
+.navItem {
+  font-size: 1.3em;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 10em;
+}
+.navItem span {
+  font-weight: 600;
+}
+.icon {
+  font-size: 1.5em;
+}
+
+.post {
+  background-color: #1d9bf0;
+  border: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+  border-radius: 20em;
+  padding: 15px 10px;
+  width: 14em;
+}
+.profileGroup {
+  height: 25px;
+  border: solid 1px white;
+}

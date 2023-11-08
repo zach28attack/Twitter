@@ -1,16 +1,18 @@
 import "./App.css";
+import Navbar from "./components/navbar/Navbar";
+import ErrorPage from "./components/shared/ErrorPage";
 import Home from "./pages/Home";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: "",
+    element: <Navbar />,
     children: [
       {
         path: "/",
         element: <Home />,
-        errorElement: "",
+        errorElement: <ErrorPage />,
       },
     ],
   },
