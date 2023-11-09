@@ -56,7 +56,6 @@ export default function Navbar() {
         </li>
         <button className={Class.post}>Post</button>
       </ul>
-
       <AccountNavItem />
     </nav>
   );
