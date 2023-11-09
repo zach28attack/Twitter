@@ -1,25 +1,14 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import ErrorPage from "./components/shared/ErrorPage";
-import Home from "./pages/Home";
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Navbar />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-        errorElement: <ErrorPage />,
-      },
-    ],
-  },
-]);
+import {Outlet} from "react-router-dom";
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
 }
 
 export default App;
