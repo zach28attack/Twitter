@@ -8,6 +8,7 @@ import {HiOutlineBookmark} from "react-icons/hi";
 import {MdGroups2} from "react-icons/md";
 import {LuUser} from "react-icons/lu";
 import {CgMoreO} from "react-icons/cg";
+import AccountNavItem from "./AccountNavItem";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,6 @@ export default function Navbar() {
         <li className={Class.navItem}>
           <RiTwitterXFill className={Class.logo} />
         </li>
-
         <li className={Class.navItem}>
           <GoHomeFill className={Class.icon} />
           <span>Home</span>
@@ -42,24 +42,22 @@ export default function Navbar() {
           <MdGroups2 className={Class.icon} />
           Communities
         </li>
-
         <li className={Class.navItem}>
           <RiTwitterXFill className={Class.icon} />
           Premium
         </li>
-
         <li className={Class.navItem}>
           <LuUser className={Class.icon} />
           Profile
         </li>
-
         <li className={Class.navItem}>
           <CgMoreO className={Class.icon} />
           More
         </li>
         <button className={Class.post}>Post</button>
       </ul>
-      <div className={Class.profileGroup}>USER PROFILE HERE</div>
+
+      <AccountNavItem />
     </nav>
   );
 }
