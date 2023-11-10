@@ -15,7 +15,7 @@ export default function TweetComposition() {
           <img src="placeholderIMG.jpg" alt="" />
         </div>
         <form>
-          <textarea type="text" placeholder="What is happening?!" onChange={textAreaRowsHandler} rows={rows} />
+          <textarea type="text" placeholder="What is happening?!" rows={rows} />
         </form>
       </div>
       <div className={Class.controlGroup}></div>
