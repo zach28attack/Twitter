@@ -18,12 +18,12 @@ export default function Tab() {
     <div className={Class.container}>
       <div className={Class.tab} onClick={tabHandler} id="for-you-feed">
         <span className={isActive1 ? Class.activeTab : Class.disabledTab}>For you</span>
-        <div className={Class.activeBar}></div>
+        <div className={`${Class.activeBar} ${Class.activeBar1} ${!isActive1 && Class.hidden}`}></div>
       </div>
 
       <div className={Class.tab} onClick={tabHandler} id="following-feed">
         <span className={isActive2 ? Class.activeTab : Class.disabledTab}>Following</span>
-        <div className={Class.activeBar}></div>
+        <div className={`${Class.activeBar} ${Class.activeBar2} ${!isActive2 && Class.hidden}`}></div>
       </div>
     </div>
   );

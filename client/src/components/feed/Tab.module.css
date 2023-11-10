@@ -16,15 +16,27 @@
 }
 .activeTab {
   color: white;
+  font-weight: 700 !important;
 }
 .disabledTab {
   opacity: 0.6;
 }
-
 .tab:hover {
   background-color: rgb(25, 25, 25);
 }
 .activeBar {
-  width: 10px;
-  background-color: #1d9bf0;
+  background-color: rgb(29, 155, 240);
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+}
+.activeBar1 {
+  width: 56px;
+}
+.activeBar2 {
+  width: 70px;
+}
+.hidden {
+  display: none;
 }
