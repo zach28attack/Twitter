@@ -26,7 +26,7 @@
 }
 .inputGroup {
   display: flex;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-left: 2px;
   align-items: center;
   width: 100%;
@@ -38,9 +38,37 @@ textarea {
 .inputGroup textarea {
   background-color: transparent;
   border: none;
+  border-bottom: solid 1px rgb(37, 42, 46);
   outline: none;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   resize: none;
   word-break: break-all;
+  letter-spacing: -1px;
+  padding-bottom: 24px;
+}
+.controlGroup {
+  display: flex;
+  color: #1d9bf0;
+  font-size: 1.4em;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 24px;
+}
+.controlGroup div {
+  display: flex;
+  gap: 1em;
+}
+
+.controlGroup button {
+  font-size: 15px;
+  background-color: #1d9bf0;
+  border: none;
+  font-weight: 600;
+  color: white;
+  border-radius: 20em;
+  padding: 8px 16px;
 }
