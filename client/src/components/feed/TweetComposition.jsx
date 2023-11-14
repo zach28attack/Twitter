@@ -26,12 +26,12 @@ export default function TweetComposition() {
       </div>
       <div className={Class.controlGroup}>
         <div>
-          <HiOutlinePhotograph />
-          <HiGif />
-          <GoTasklist />
-          <BsEmojiSmile />
-          <AiOutlineSchedule />
-          <SiGooglemaps />
+          <HiOutlinePhotograph className={Class.icon} />
+          <HiGif className={Class.icon} />
+          <GoTasklist className={Class.icon} />
+          <BsEmojiSmile className={Class.icon} />
+          <AiOutlineSchedule className={Class.icon} />
+          <SiGooglemaps className={Class.icon} />
         </div>
         <button>Post</button>
       </div>
