@@ -13,6 +13,7 @@
   position: relative;
   transition: ease-in-out background 0.2s;
   color: white;
+  z-index: 1;
 }
 .activeTab {
   color: white;
