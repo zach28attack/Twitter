@@ -2,7 +2,7 @@ import Class from "./AccountNavItem.module.css";
 import {VscVerifiedFilled} from "react-icons/vsc";
 import {FiMoreHorizontal} from "react-icons/fi";
 
-export default function AccountNavItem() {
+export default function AccountNavItem({name, username}) {
   return (
     <div className={Class.container}>
       <div className={Class.group1}>
@@ -12,11 +12,11 @@ export default function AccountNavItem() {
         </div>
         <div>
           <div className={Class.nameGroup}>
-            <span>Zachary</span>
+            <span>{name}</span>
             <VscVerifiedFilled className={Class.icon} />
           </div>
           <div className={Class.usernameGroup}>
-            <span>@zach28attack</span>
+            <span>@{username}</span>
           </div>
         </div>
       </div>

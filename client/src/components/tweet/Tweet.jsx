@@ -7,16 +7,12 @@ import {IoIosStats} from "react-icons/io";
 import {IoBookmarkOutline} from "react-icons/io5";
 import {IoMdShareAlt} from "react-icons/io";
 
-export default function Tweet() {
+export default function Tweet({tweet}) {
   return (
     <div className={Class.container}>
-      <AccountNavItem />
+      <AccountNavItem name={tweet.name} username={tweet.username} />
       <div className={Class.body}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
-        </p>
+        <p>{tweet.content}</p>
         <div>
           <IoChatbubbleOutline className={Class.icon} />
           <BiRepost className={Class.icon} />
